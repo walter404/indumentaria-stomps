@@ -15,78 +15,84 @@
 
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="index.html">
-        <img src="img/logo.jpeg" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.jpeg" alt="logo" width="150px" height="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/nostros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/galeria.html">galeria</a>
-            </li>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/nostros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/galeria.html">galeria</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" style="background: rgb(145, 132, 132);">
         <h1>Indumentaria Stomp</h1>
         <p>Las mejores del mercado</p>
         <button type="button" class="btn btn-info">Info</button>
     </div>
 
-    <div class="row ">
-        <div class="col ml-5">
-            <div class="card" style="width: 400px;">
-                <img src="img/hombre.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h2>Prendas para Caballeros</h2>
-                    <p class="card-text">Podes encontar prendas para tus rutinas diarias.</p>
-                    <a href="#" class="btn btn-primary">ver mas</a>
+    <section id="facilities">
+        <div class="container3">
+            <div class="title">
+                <h2 class="text-center animate__animated animate__tada animate__repeat-3"
+                    style="padding-top: 20px; padding-bottom: 20px;">Productos</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="./img/hombre.jpg" alt="" class="card-img-top">
+                        <div class="card-body" style="background: rgb(255, 220, 173);">
+                            <h5 class="card-title">GYM</h5>
+                            <p class="card-text">Podes encontar prendas para tus rutinas diarias.</p>
+                            <button type="button" class="btn btn-secondary">Ver mas</button>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="./img/mujer.jpg" alt="" class="card-img-top">
+                        <div class="card-body" style="background: rgb(255, 220, 173);">
+                            <h5 class="card-title">GYM</h5>
+                            <p class="card-text">Ofrecemos calidad y confort .</p>
+                            <button type="button" class="btn btn-secondary">Ver mas</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="background: rgb(255, 220, 173);">
+                        <img src="./img/calzado.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">GYM</h5>
+                            <p class="card-text">Contactamos con variedades de calzado deportivo.</p>
+                            <button type="button" class="btn btn-secondary">Ver mas</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="col ml-5">
-            <div class="card" style="width: 400px;">
-                <img src="img/mujer.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h2>Prendas para Damas</h2>
-                    <p class="card-text">Ofrecemos calidad y confort .</p>
-                    <a href="#" class="btn btn-primary">ver mas</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="col ml-5">
-            <div class="card" style="width: 400px;">
-                <img src="img/calzado.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h2>Calzados</h2>
-                    <p class="card-text">Contactamos con variedades de calzado deportivo.</p>
-                    <a href="#" class="btn btn-primary">ver mas</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container" style="padding: 80px 0;" aling="center">
+    <footer style="background: rgb(212, 196, 176);">
+        <div class="container text-center style=" padding: 80px 0; padding-bottom: 15px; padding-top: 30px;"
+            aling="center">
             <a href="https://www.facebook.com/Calzados-Stomp-104788585080617">
                 <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
             </a>
@@ -102,7 +108,6 @@
             <p style="color: #91bec2; padding: 15px 0;" aling="center">
                 &copy; 2021 copyright: <a href="walterame123@gmail.com"> Creado por Walter Verdun</a>
             </p>
-
         </div>
 
     </footer>
