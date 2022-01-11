@@ -22,13 +22,13 @@ body {
 
 .jumbotron h1 {
   color: #553636;
-  font-family: 'Padauk', sans-serif;
+  font-family: "Padauk", sans-serif;
   font-size: 80px;
 }
 
 .jumbotron p {
   color: #553636;
-  font-family: 'Padauk', sans-serif;
+  font-family: "Padauk", sans-serif;
   font-size: 20px;
 }
 
@@ -47,7 +47,7 @@ body {
 .card .parrafo {
   font-size: 15px;
   color: #fff;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
 }
 
 #facilities {
@@ -58,7 +58,7 @@ body {
   color: #5a3f3f;
   font-size: 70px;
   padding-bottom: 5px;
-  font-family: initial;
+  font-family: "Lucida Sans";
 }
 
 .title {

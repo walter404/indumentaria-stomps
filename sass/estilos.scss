@@ -9,6 +9,8 @@ $color-letra:rgb(85, 54, 54);
 $color-hover:#fff;
 $margin-ambos:10px;
 $text:none;
+$font-1:'Padauk', sans-serif;
+$font-2:'Lucida Sans';
 
 * {
     margin: 0;
@@ -28,14 +30,14 @@ body {
 
 .jumbotron h1 {
     color: $color-letra ;
-    font-family: 'Padauk', sans-serif;
+    font-family: $font-1;
     font-size: 80px;
 
 }
 
 .jumbotron p {
     color: $color-letra;
-    font-family: 'Padauk', sans-serif;
+    font-family: $font-1;
     font-size: 20px;
 }
 
@@ -55,7 +57,7 @@ body {
 .card .parrafo {
     font-size: 15px;
     color: $color-hover;
-    font-family: 'Lucida Sans';
+    font-family: $font-2;
 }
 
 #facilities {
@@ -66,7 +68,7 @@ body {
     color: rgb(90, 63, 63);
     font-size: 70px;
     padding-bottom: 5px;
-    font-family: initial;
+    font-family: $font-2;
 }
 
 .title {
