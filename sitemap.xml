@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/index.html</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/secciones/productos.html</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/secciones/nostros.html</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/secciones/galeria.html</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://walter404.github.io/indumentaria-stomps/secciones/contacto.html</loc>
+  <lastmod>2022-01-18T22:26:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
