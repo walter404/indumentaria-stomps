@@ -3,6 +3,29 @@
 @import url("https://fonts.googleapis.com/css2? family = Lora: ital, wght @ 1,500 & family = Mate & family = Padauk & family = Source + Serif + 4: wght @ 300 & display = swap ");
 @import url("https://fonts.googleapis.com/css2? family = Lora: ital, wght @ 1,500 & family = Padauk & family = Source + Serif + 4: wght @ 300 & display = swap");
 @import url("https://fonts.googleapis.com/css2? family = Padauk & family = Fuente + Serif + 4: wght @ 300 & display = swap");
+.navbar {
+  background-color: #646c7c;
+  color: #333;
+}
+
+.navbar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #8f8484;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+a footer:link, footer:visited, footer:hover, footer:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,16 +37,9 @@ body {
   background-color: #7b869e;
 }
 
-.navbar img {
-  width: 150px;
-  height: 150px;
-  border-radius: 5px;
-}
-
 .jumbotron h1 {
   color: #553636;
   font-family: "Padauk", sans-serif;
-  font-size: 80px;
 }
 
 .jumbotron p {
@@ -32,12 +48,18 @@ body {
   font-size: 20px;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .row .card-body {
   background-color: #726565;
   color: honeydew;
 }
 
 .jumbotron {
+  border-radius: 0;
   height: 400px;
   background-image: url(../img/logosecundario.jpg);
   background-position: center;
@@ -56,7 +78,6 @@ body {
 
 #facilities h2 {
   color: #5a3f3f;
-  font-size: 70px;
   padding-bottom: 5px;
   font-family: "Lucida Sans";
 }
@@ -79,30 +100,98 @@ body {
   margin: 20px 10px;
 }
 
-footer {
-  background-color: #8f8484;
+h2 {
+  font-size: 50px;
+  color: #97483a;
+  margin-bottom: 20px;
+}
+
+.bucle-1 {
+  width: 400px;
+  height: 250px;
+  background-color: peru;
+  border: 2px solid #333;
   text-align: center;
-  margin-bottom: 0;
+  font-size: 30px;
+  padding: 30px;
 }
 
-a:link {
-  color: #fff;
-  text-decoration: none;
+.bucle-2 {
+  width: 400px;
+  height: 250px;
+  background-color: peru;
+  border: 2px solid #333;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
 }
 
-a:visited {
-  color: #fff;
-  text-decoration: none;
+.bucle-3 {
+  width: 400px;
+  height: 250px;
+  background-color: peru;
+  border: 2px solid #333;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
 }
 
-a:hover {
-  color: #fff;
-  text-decoration: none;
+.bucle-1 {
+  background-color: #66ffff;
+  background-color: cyan;
 }
 
-a:active {
-  color: #fff;
-  text-decoration: none;
+.bucle-2 {
+  background-color: #99ffff;
+  background-color: #00cccc;
+}
+
+.bucle-3 {
+  background-color: #ccffff;
+  background-color: #009999;
+}
+
+.container7 {
+  background-color: #b6a7a7;
+  background-image: url(../img/logo.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+  height: 400px;
+  width: auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+@media screen and (min-width: 540px) {
+  .container7 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container7 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container7 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container7 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 
 .bg {
@@ -133,10 +222,17 @@ a:active {
   margin-top: -70px;
 }
 
+.container5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .section {
-  min-width: 200px;
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: (280px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 280px);
   -ms-grid-rows: 1fr;
@@ -146,7 +242,7 @@ a:active {
 
 .producto {
   margin-left: 5px;
-  padding: 5px;
+  padding: 15px;
   max-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,6 +328,7 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

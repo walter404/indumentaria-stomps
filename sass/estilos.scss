@@ -3,14 +3,9 @@
 @import url('https://fonts.googleapis.com/css2? family = Lora: ital, wght @ 1,500 & family = Mate & family = Padauk & family = Source + Serif + 4: wght @ 300 & display = swap ');
 @import url('https://fonts.googleapis.com/css2? family = Lora: ital, wght @ 1,500 & family = Padauk & family = Source + Serif + 4: wght @ 300 & display = swap');
 @import url('https://fonts.googleapis.com/css2? family = Padauk & family = Fuente + Serif + 4: wght @ 300 & display = swap');
-
-$color-principal:#7b869e;
-$color-letra:rgb(85, 54, 54);
-$color-hover:#fff;
-$margin-ambos:10px;
-$text:none;
-$font-1:'Padauk', sans-serif;
-$font-2:'Lucida Sans';
+@import "_variables";
+@import "_nav";
+@import "_footer";
 
 * {
     margin: 0;
@@ -22,17 +17,9 @@ body {
     background-color: $color-principal;
 }
 
-.navbar img {
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-}
-
 .jumbotron h1 {
-    color: $color-letra ;
+    color: $color-letra;
     font-family: $font-1;
-    font-size: 80px;
-
 }
 
 .jumbotron p {
@@ -41,13 +28,19 @@ body {
     font-size: 20px;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .row .card-body {
     background-color: rgb(114, 101, 101);
     color: honeydew;
 }
 
 .jumbotron {
-    height: 400px;
+    border-radius: 0;
+    height: $alto * 8;
     background-image: url(../img/logosecundario.jpg);
     background-position: center;
     background-size: cover;
@@ -66,7 +59,6 @@ body {
 
 #facilities h2 {
     color: rgb(90, 63, 63);
-    font-size: 70px;
     padding-bottom: 5px;
     font-family: $font-2;
 }
@@ -88,31 +80,102 @@ body {
     margin: 20px $margin-ambos;
 }
 
+$animal: elefante;
 
-footer {
-    background-color: rgb(143, 132, 132);
-    text-align: center;
-    margin-bottom: 0;
+h2 {
+    @if $animal==elefante {
+        font-size: 50px;
+        color: rgb(151, 72, 58);
+        margin-bottom: 20px;
+    }
+
+    @else if $animal==gato {
+        color: teal;
+    }
+
+    @else if $animal==caballo {
+        color: green;
+    }
+
+    @else {
+        color: coral;
+        background-color: #333;
+    }
 }
 
-a:link {
-    color: $color-hover;
-    text-decoration: none;
+@for $i from 1 through 3 {
+    .bucle-#{$i} {
+        width: $ancho * 8;
+        height: $alto * 5;
+        background-color: peru;
+        border: 2px solid #333;
+        text-align: center;
+        font-size: 30px;
+        padding: 30px;
+    }
 }
 
-a:visited {
-    color: $color-hover;
-    text-decoration: $text;
+$base-color:#036;
+$base-color:#3ff;
+
+@for $in from 1 through 3 {
+    .bucle-#{$in} {
+        background-color: lighten($base-color, $in * 10%);
+        background-color: darken($base-color, $in * 10%);
+    }
 }
 
-a:hover {
-    color: $color-hover;
-    text-decoration: $text;
+$breakpoints: (sm : 540px,
+    md : 768px,
+    lg : 1024px,
+    xl : 1280px);
+
+@mixin media-up($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "el valor '#{breakpoint}' no ha sido declarado como breakpoint";
+    }
+
+
 }
 
-a:active {
-    color: $color-hover;
-    text-decoration: $text;
+.container7 {
+    background-color: $color-2;
+    background-image: url(../img/logo.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    height: $alto * 8;
+    width: auto;
+    box-shadow: 0 0 20px rgba(#000000, 0.6);
+    transition: all 400ms ease;
+
+    @include media-up(sm) {
+        transform: scale(0.5);
+        margin-top: 30px;
+    }
+
+    @include media-up(md) {
+        transform: scale(0.5);
+
+    }
+
+    @include media-up(lg) {
+        transform: scale(0.5);
+    }
+
+    @include media-up(xl) {
+        transform: scale(0.5);
+    }
+
+    @include media-up(xxl) {
+        transform: scale(0.5);
+    }
 }
 
 .bg {
@@ -143,9 +206,14 @@ a:active {
     margin-top: -70px;
 }
 
+.container5 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .section {
-    min-width: 200px;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, 280px);
     grid-template-rows: 1fr;
     grid-gap: 1em;
@@ -153,7 +221,7 @@ a:active {
 
 .producto {
     margin-left: 5px;
-    padding: 5px;
+    padding: 15px;
     max-width: 280px;
     display: flex;
     flex-flow: column;
@@ -216,10 +284,11 @@ a:active {
 
 .aos {
     display: flex;
+    text-align: center;
     justify-content: center;
     font-family: 'Lora', serif;
     font-size: 20px;
-    background-color: rgb(100, 93, 93);
+    background-color: $color-1;
     color: rgb(190, 186, 186);
     width: 600px;
     height: 200px;
